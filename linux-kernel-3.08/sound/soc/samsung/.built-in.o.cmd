@@ -1,0 +1,1 @@
+cmd_sound/soc/samsung/built-in.o :=  arm-linux-ld -EL    -r -o sound/soc/samsung/built-in.o sound/soc/samsung/snd-soc-s3c24xx.o sound/soc/samsung/snd-soc-s3c-i2s-v2.o sound/soc/samsung/snd-soc-s3c-idma.o sound/soc/samsung/snd-soc-i2s.o 

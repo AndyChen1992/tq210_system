@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<demolauncher>
+    <demos>
+        <example help="/opt/PDA/app/help/ledHelp.txt" image="/opt/PDA/app/images/ledBackGrond.png" args="" name="LED测试程序" filename="/opt/PDA/bin/tqledtest" />
+        <example help="/opt/PDA/app/help/beepHelp.txt" image="/opt/PDA/app/images/beepBackGround.png" args="" name="蜂鸣器测试程序" filename="/opt/PDA/bin/tqbeep" />
+        <example help="/opt/PDA/app/help/pingHelp.txt" image="/opt/PDA/app/images/pingBackGround.png" args="" name="网卡测试程序" filename="/opt/PDA/bin/tqping" />
+        <example help="/opt/PDA/app/help/adcHelp.txt" image="/opt/PDA/app/images/adBackGround.png" args="" name="ADC测试程序" filename="/opt/PDA/bin/tqadc" />
+        <example help="/opt/PDA/app/help/buttonHelp.txt" image="/opt/PDA/app/images/buttonBackGround.png" args="" name="按键测试程序" filename="/opt/PDA/bin/tqbutton" />
+        <example help="" image="/opt/PDA/app/images/temperatureBackGround.png" args="" name="温度测试" filename="/opt/PDA/bin/tqtemperature" />
+        <example help="/opt/PDA/app/help/colourHelp.txt" image="/opt/PDA/app/images/colourBackGround.png" args="" name="液晶屏测试" filename="/opt/PDA/bin/tqcolour" />
+    </demos>
+    <slideshow interval="10000" timeout="6000" >
+        <imagedir dir="slides" />
+    </slideshow>
+</demolauncher>

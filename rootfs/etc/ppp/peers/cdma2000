@@ -1,0 +1,19 @@
+nodetach
+lock
+/dev/ttyUSB4
+115200
+user "ctnet@mycdma.cn"
+password "vnet.mobi"
+crtscts
+hide-password
+usepeerdns
+noauth
+noipdefault
+novj
+novjccomp
+noccp
+defaultroute
+ipcp-accept-local
+ipcp-accept-remote
+connect '/sbin/chat -s -v -f /etc/ppp/peers/cdma2000-connect'
+disconnect '/sbin/chat -s -v -f /etc/ppp/peers/cdma2000-disconnect'

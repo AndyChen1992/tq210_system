@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<demolauncher>
+    <demos>
+        <example help="/opt/PDA/app/help/install.txt" image="/opt/PDA/app/images/installBackGround.png" args="" name="安装程序" filename="/opt/PDA/bin/tqinstaller" />
+        <example help="/opt/PDA/app/help/setautorunHelp.txt" image="/opt/PDA/app/images/setautorunBackGround.png" args="" name="设置开机启动程序" filename="/opt/PDA/bin/tqsetautorun" />
+        <example help="/opt/PDA/app/help/wifiHelp.txt" image="/opt/PDA/app/images/wifiBackGround.png" args="" name="网络参数设置" filename="/opt/PDA/bin/tqnetset" />
+        <example help="/opt/PDA/app/help/RTCHelp.txt" image="/opt/PDA/app/images/rtcBackGround.png" args="" name="RTC设置" filename="/opt/PDA/bin/tqrtc" />
+        <example help="/opt/PDA/app/help/ts_calibrateHelp.txt" image="/opt/PDA/app/images/ts_calibrateBackGround.png" args="" name="触屏校验" filename="/opt/PDA/bin/tqts_calibrate" />
+    </demos>
+    <slideshow interval="10000" timeout="6000" >
+        <imagedir dir="slides" />
+    </slideshow>
+</demolauncher>

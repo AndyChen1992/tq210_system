@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<demolauncher>
+    <demos>
+        <example help="/opt/PDA/app/help/usb_sdHelp.txt" image="/opt/PDA/app/images/usb_sdBackGround.png" args="" name="文件管理" filename="/opt/PDA/bin/tqfilebrowser" />
+    </demos>
+    <slideshow interval="10000" timeout="6000" >
+        <imagedir dir="slides" />
+    </slideshow>
+</demolauncher>

@@ -1,0 +1,17 @@
+nodetach
+lock
+/dev/s3c2410_serial1
+921600
+nocrtscts
+nocdtrcts
+local
+usepeerdns
+defaultroute
+noipdefault
+ipcp-accept-local
+ipcp-accept-remote
+user cmnet
+password cmnet
+lock
+nodetach
+connect "/system/bin/chat -v -t 50 -f /system/etc/ppp/chat/cmtc-isp"

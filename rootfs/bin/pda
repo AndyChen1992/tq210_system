@@ -1,0 +1,49 @@
+#!/bin/sh
+
+echo Start Qt4 PDA > /dev/console
+
+source /tmp/env
+
+export set HOME=/root
+export set QTDIR=/opt/PDA
+export set QPEDIR=/opt/PDA
+export set QWS_DISPLAY="LinuxFB:/dev/fb0"
+export set QWS_KEYBOARD="TTY:/dev/tty1"
+if [ -f /sys/devices/virtual/input/input$ts/uevent ] ; then
+	export set TSLIB_CONFFILE=/etc/ts.conf
+	if [ -n "$pointer" ] ; then
+		export set TSLIB_CALIBFILE=$pointer
+		export set TSLIB_TSDEVICE=/dev/event$ts
+	fi
+	export set TSLIB_PLUGINDIR=/lib/ts
+	export set QWS_MOUSE_PROTO="TSLIB:/dev/event$ts MouseMan:/dev/mice"
+else
+	export set QWS_MOUSE_PROTO="MouseMan:/dev/mice"
+fi
+export set QT_PLUGIN_PATH=$QTDIR/plugins/
+export set QT_QWS_FONTDIR=$QTDIR/lib/fonts/
+export set PATH=$QPEDIR/bin:$PATH
+export set LD_LIBRARY_PATH=$QTDIR/lib:$QPEDIR/plugins/imageformats:$QPEDIR/plugins/accessible:$LD_LIBRARY_PATH
+
+if [ -n "$pointer" ] ; then
+#表示电阻屏或用鼠标
+	if [ -f /etc/pointercal ] ; then
+		echo
+	else
+		ts_calibrate
+	fi
+else
+#空表示电容屏
+#	echo "1 0 0 0  1 0 1 " >/etc/pointercal
+	echo
+fi
+
+#自动运行程序
+if [ -f /etc/autorun.conf ] ; then
+	source /etc/autorun.conf
+	$AUTORUN  > /dev/null 2>/dev/null
+fi
+
+#pda
+$QPEDIR/bin/tqpda -qws > /dev/null 2>/dev/null
+

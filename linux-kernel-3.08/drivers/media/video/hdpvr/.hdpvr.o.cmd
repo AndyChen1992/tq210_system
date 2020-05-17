@@ -1,0 +1,1 @@
+cmd_drivers/media/video/hdpvr/hdpvr.o := arm-linux-ld -EL    -r -o drivers/media/video/hdpvr/hdpvr.o drivers/media/video/hdpvr/hdpvr-control.o drivers/media/video/hdpvr/hdpvr-core.o drivers/media/video/hdpvr/hdpvr-video.o drivers/media/video/hdpvr/hdpvr-i2c.o 

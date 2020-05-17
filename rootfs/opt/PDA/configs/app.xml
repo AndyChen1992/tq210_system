@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<demolauncher>
+    <demos>
+        <example help="/opt/PDA/app/help/comdebugger.txt" image="/opt/PDA/app/images/comodebuggerBackGround.png" args="" name="串口测试程序" filename="/opt/PDA/bin/tqcomdebugger" />
+        <example help="/opt/PDA/app/help/imagebroserHelp.txt" image="/opt/PDA/app/images/imageBrowserBackGrond.png" args="" name="图片浏览器" filename="/opt/PDA/bin/tqimagebrowser" />
+        <example help="/opt/PDA/app/help/calculatorHelp.txt" image="/opt/PDA/app/images/calculatorBackGround.png" args="" name="计算器" filename="/opt/PDA/bin/tqcalculator" />
+        <example help="/opt/PDA/app/help/gprsHelp.txt" image="/opt/PDA/app/images/gprsBackGround.png" args="" name="打电话发短信" filename="/opt/PDA/bin/tqgprs" />
+        <example help="/opt/PDA/app/help/noteHelp.txt" image="/opt/PDA/app/images/noteBackGround.png" args="" name="记事本" filename="/opt/PDA/bin/tqnote" />
+        <example help="/opt/PDA/app/help/downHelp.txt" image="/opt/PDA/app/images/downBackGround.png" args="" name="网络下载程序" filename="/opt/PDA/bin/tqdownload" />
+        <example help="/opt/PDA/app/help/webSocketHelp.txt" image="/opt/PDA/app/images/tqsocketdebuggerBackGround.png" args="" name="网络数据" filename="/opt/PDA/bin/tqsocketdebugger" />
+        <example help="/opt/PDA/app/help/mp3playerHelp.txt" image="/opt/PDA/app/images/mp3playerBackGround.png" args="" name="MP3播放器" filename="/opt/PDA/bin/tqmp3player" />
+        <example help="/opt/PDA/app/help/mediaplayerHelp.txt" image="/opt/PDA/app/images/mediaplayerBackGround.png" args="" name="多媒体播放器" filename="/opt/PDA/bin/tqmediaplayer" />
+        <example help="/opt/PDA/app/help/fingerprintHelp.txt" image="/opt/PDA/app/images/fingerprint.png" args="" name="指纹测试" filename="/opt/PDA/bin/tqfingerprint" />
+        <example help="/opt/PDA/app/help/cameraHelp.txt" image="/opt/PDA/app/images/tqcameraBackGround.png" args="" name="摄像头服务器端" filename="/opt/PDA/bin/tqcamera" />
+        <example help="/opt/PDA/app/help/mfccameraclientHelp.txt" image="/opt/PDA/app/images/tqcameraclientBackGround.png" args="" name="摄像头客户端" filename="/opt/PDA/bin/tqcameraclient" />
+        <example help="/opt/PDA/app/help/webBrowserHelp.txt" image="/opt/PDA/app/images/webbrowserBackGround.png" args="" name="网页浏览器" filename="/opt/PDA/bin/tqwebbrowser" />
+        <example help="/opt/PDA/app/help/gpsHelp.txt" image="/opt/PDA/app/images/tqgpsBackGround.png" args="" name="GPS卫星定位" filename="/opt/PDA/bin/tqgps" />
+    </demos>
+    <slideshow interval="10000" timeout="6000" >
+        <imagedir dir="slides" />
+    </slideshow>
+</demolauncher>

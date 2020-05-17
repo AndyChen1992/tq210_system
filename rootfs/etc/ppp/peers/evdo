@@ -1,0 +1,15 @@
+# /etc/ppp/peers/unicom
+# this is ppp script for use chinaunicom's CDMA data service
+#
+
+/dev/ttyUSB0
+115200
+crtscts
+connect '/system/bin/chat -v -f /system/etc/ppp/chat/evdo'
+nodetach
+ipcp-accept-local
+ipcp-accept-remote
+defaultroute
+usepeerdns
+user card
+password card

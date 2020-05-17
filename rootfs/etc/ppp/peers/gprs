@@ -1,0 +1,15 @@
+nodetach
+lock
+/dev/s3c2410_serial1
+115200
+crtscts
+modem
+debug
+nodetach
+usepeerdns
+noipdefault
+defaultroute
+user "cmnet"
+0.0.0.0:0.0.0.0
+connect '/sbin/chat -s -v -f /etc/ppp/gprs-connect-chat'
+disconnect '/sbin/chat -v -f /etc/ppp/gprs-disconnect-chat'
